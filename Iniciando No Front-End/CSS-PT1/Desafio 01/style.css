@@ -1,0 +1,142 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total dos elementos */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  font-weight: 400;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.menu-navegacao a {
+  text-decoration: none;
+  color: #17233d;
+  font-size: 18px;
+}
+
+#sign-up {
+  background-color: #6fbf44;
+  border: 1px solid #4cb538;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+#sign-up:hover {
+  background-color: #4cb538;
+}
+
+.caixa-principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.imagem-principal {
+  width: 50%;
+}
+
+.caixa-textos {
+  width: 40%;
+  justify-content: space-between;
+}
+
+.caixa-textos h1 {
+  font-size: 62px;
+  font-weight: 700;
+  color: #161a49;
+  margin-bottom: 20px;
+}
+
+.caixa-textos p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4b505a;
+  margin-bottom: 20px;
+}
+
+#saiba-mais {
+  color: #6fbf44;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1200px) {
+  .caixa-principal {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .imagem-principal,
+  .caixa-textos {
+    width: 100%;
+    text-align: center;
+  }
+
+  .caixa-textos h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  header ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .caixa-textos h1 {
+    font-size: 36px;
+  }
+
+  .caixa-textos p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .caixa-textos h1 {
+    font-size: 28px;
+  }
+
+  .caixa-textos p {
+    font-size: 14px;
+  }
+
+  .caixa-principal {
+    padding: 20px;
+  }
+
+  #sign-up {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
